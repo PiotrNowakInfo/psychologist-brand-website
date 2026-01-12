@@ -64,7 +64,7 @@ const Contact = () => {
                 <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
                   {t('contact.form.email')}
                 </label>
-                <Input 
+                <Input
                   id="email"
                   name="email"
                   type="email"
@@ -163,12 +163,6 @@ const Contact = () => {
                   <a href="https://www.znanylekarz.pl/katarzyna-gostkowska-kraczkowska/psycholog-psychoterapeuta/malbork" target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-4 h-4 mr-2" />
                     {t('contact.booking.znanylekarz')}
-                  </a>
-                </Button>
-                <Button variant="outline" className="flex-1" asChild>
-                  <a href="https://www.doctorify.pl" target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    {t('contact.booking.doctorify')}
                   </a>
                 </Button>
               </div>
