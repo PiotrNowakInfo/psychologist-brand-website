@@ -17,7 +17,7 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="font-display text-3xl md:text-5xl font-semibold text-foreground mb-4">
             {t('about.title')}
-          </h2>
+          </h2> 
           <p className="text-muted-foreground text-lg">
             {t('about.subtitle')}
           </p>
