@@ -77,7 +77,7 @@ const Contact = () => {
               <div>
                 <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
                   {t('contact.form.phone')}
-                </label>
+                </label> 
                 <Input
                   id="phone"
                   name="phone"
