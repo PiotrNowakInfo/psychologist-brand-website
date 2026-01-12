@@ -165,12 +165,6 @@ const Contact = () => {
                     {t('contact.booking.znanylekarz')}
                   </a>
                 </Button>
-                <Button variant="outline" className="flex-1" asChild>
-                  <a href="https://www.doctorify.pl" target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    {t('contact.booking.doctorify')}
-                  </a>
-                </Button>
               </div>
             </div>
           </div>
