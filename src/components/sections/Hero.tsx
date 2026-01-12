@@ -7,6 +7,10 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center hero-gradient text-primary-foreground overflow-hidden">
+      <div className='absolute top-0 left-0 w-full'>
+        <img src='/img2.png' alt='Hero image' className='w-full h-auto object-cover opacity-20' />
+      </div>
+      
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-72 h-72 rounded-full bg-white/20 blur-3xl" />
@@ -42,7 +46,7 @@ const Hero = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-medium px-8"
+              className="border-primary-foreground/30 text-primary hover:bg-primary-foreground/10 font-medium px-8"
               asChild
             >
               <a href="#about">{t('hero.cta.secondary')}</a>
