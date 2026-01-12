@@ -38,7 +38,8 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: '0.4s' }}>
             <Button
               size="lg"
-              className="bg-white text-primary hover:bg-white/90 font-medium px-8"
+              variant="outline"
+              className="bg-white border-primary-foreground/30 text-primary hover:bg-primary-foreground/10 font-medium px-8"
               asChild
             >
               <a href="#contact">{t('hero.cta')}</a>

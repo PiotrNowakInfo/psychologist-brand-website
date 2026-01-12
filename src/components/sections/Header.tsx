@@ -21,7 +21,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="font-display text-xl font-semibold text-foreground">
-            Psychoterapia
+          Katarzyna Gostkowska
           </a>
 
           {/* Desktop Navigation */}
