@@ -64,7 +64,7 @@ const Contact = () => {
                 <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
                   {t('contact.form.email')}
                 </label>
-                <Input
+                <Input 
                   id="email"
                   name="email"
                   type="email"

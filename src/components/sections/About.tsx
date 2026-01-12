@@ -2,7 +2,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Award, BookOpen, Users } from 'lucide-react';
 
 const About = () => {
-  const { t } = useLanguage();
+  const { t } = useLanguage(); 
 
   const credentials = [
     { key: 'about.credential.1', icon: Award },

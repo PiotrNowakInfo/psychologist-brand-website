@@ -5,7 +5,7 @@ import { ArrowDown } from 'lucide-react';
 const Hero = () => {
   const { t } = useLanguage();
 
-  return (
+  return ( 
     <section className="relative min-h-screen flex items-center justify-center hero-gradient text-primary-foreground overflow-hidden">
       <div className='absolute top-0 left-0 w-full'>
         <img src='/img2.png' alt='Hero image' className='w-full h-auto object-cover opacity-20' />
