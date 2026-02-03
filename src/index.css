@@ -139,6 +139,14 @@
     background: var(--hero-gradient);
   }
 
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-xl border border-white/20 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)];
+  }
+
+  .text-glow {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  }
+
   .text-gradient {
     background: var(--text-gradient);
     -webkit-background-clip: text;
@@ -164,6 +172,16 @@
 
   .animate-slide-in-left {
     animation: slideInLeft 0.6s ease-out forwards;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
   }
 
   @keyframes fadeIn {
