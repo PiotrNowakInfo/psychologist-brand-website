@@ -96,6 +96,10 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.booking.znanylekarz': 'ZnanyLekarz',
     'contact.booking.doctorify': 'Doctorify',
     
+    // Booking
+    'booking.title': 'Umów wizytę',
+    'booking.subtitle': 'Wybierz dogodny termin w kalendarzu poniżej.',
+
     // Footer
     'footer.rights': 'Wszelkie prawa zastrzeżone.',
     'footer.privacy': 'Polityka prywatności',
@@ -187,6 +191,10 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.booking.znanylekarz': 'ZnanyLekarz',
     'contact.booking.doctorify': 'Doctorify',
     
+    // Booking
+    'booking.title': 'Book an Appointment',
+    'booking.subtitle': 'Choose a convenient time in the calendar below.',
+
     // Footer
     'footer.rights': 'All rights reserved.',
     'footer.privacy': 'Privacy Policy',
