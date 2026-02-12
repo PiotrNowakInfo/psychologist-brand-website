@@ -150,23 +150,8 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Online Booking */}
-            <div>
-              <h3 className="font-display text-xl font-semibold text-foreground mb-4">
-                {t('contact.booking.title')}
-              </h3>
-              <p className="text-muted-foreground mb-4">
-                {t('contact.booking.desc')}
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Button variant="outline" className="flex-1" asChild>
-                  <a href="https://www.znanylekarz.pl/katarzyna-gostkowska-kraczkowska/psycholog-psychoterapeuta/malbork" target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    {t('contact.booking.znanylekarz')}
-                  </a>
-                </Button>
-              </div>
-            </div>
+{/* Online Booking - Removed as we have a dedicated section now */}
+
           </div>
         </div>
       </div>

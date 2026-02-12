@@ -55,7 +55,7 @@ const Hero = () => {
               className="bg-white border-primary-foreground/30 text-primary hover:bg-primary-foreground/10 font-medium px-8"
               asChild
             >
-              <a href="#contact">{t("hero.cta")}</a>
+              <a href="#booking">{t("hero.cta")}</a>
             </Button>
             <Button
               size="lg"
