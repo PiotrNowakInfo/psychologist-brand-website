@@ -91,6 +91,8 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.info.phone': 'Telefon',
     'contact.info.email': 'E-mail',
     'contact.info.address': 'Adres gabinetu',
+    'contact.map.open': 'Otwórz w Mapach',
+    'contact.map.hint': 'Znajdź mnie na mapie',
     // Footer
     'footer.rights': 'Wszelkie prawa zastrzeżone.',
     'footer.privacy': 'Polityka prywatności',
@@ -177,6 +179,8 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.info.phone': 'Phone',
     'contact.info.email': 'Email',
     'contact.info.address': 'Office Address',
+    'contact.map.open': 'Open in Maps',
+    'contact.map.hint': 'Find me on the map',
     // Footer
     'footer.rights': 'All rights reserved.',
     'footer.privacy': 'Privacy Policy',

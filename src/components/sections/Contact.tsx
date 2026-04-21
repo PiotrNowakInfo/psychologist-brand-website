@@ -5,6 +5,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { useState } from 'react';
 import { useToast } from '@/hooks/use-toast';
+import LocationMap from './LocationMap';
 
 const Contact = () => {
   const { t } = useLanguage();
@@ -148,6 +149,8 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
+              
+              <LocationMap />
             </div>
           </div>
         </div>
