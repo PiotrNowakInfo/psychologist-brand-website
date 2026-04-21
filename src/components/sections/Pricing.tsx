@@ -9,53 +9,49 @@ const Pricing = () => {
     pl: {
       title: 'Cennik',
       subtitle:
-        'Przejrzyste stawki i stały czas trwania każdej sesji – wybierz formę wsparcia, której potrzebujesz.',
+        'Aktualne stawki za konsultacje i psychoterapię.',
       cta: 'Umów spotkanie',
       note:
-        'Stawki dotyczą sesji online. Jeśli potrzebujesz innej formy lub masz pytania organizacyjne, skontaktuj się – wspólnie znajdziemy najlepsze rozwiązanie.',
+        'Pierwsze spotkanie jest płatne z góry jako forma rezerwacji terminu. Konsultację można odwołać lub przełożyć do 24 godzin przed wizytą.',
+      details: [
+        'Ze względu na specyfikę pracy nie zawsze mogę odebrać telefon, dlatego najlepiej skontaktować się wiadomością SMS.',
+        'Pracuję wyłącznie z osobami dorosłymi i nie prowadzę terapii rodzin ani bliskich swoich Klientów.',
+        'Kilka pierwszych spotkań służy wzajemnemu poznaniu, określeniu problemów do pracy i ustaleniu planu terapii.',
+        'Terapia indywidualna odbywa się zazwyczaj raz w tygodniu, a terapia par raz na dwa tygodnie. W uzasadnionych przypadkach częstotliwość może zostać ustalona indywidualnie.',
+        'Proszę o punktualne przybywanie na sesje. Spóźnienie nie wydłuża czasu trwania spotkania.',
+      ],
       items: [
         {
-          title: 'Konsultacja indywidualna',
+          title: 'Konsultacja psychologiczna',
           duration: '50 minut',
-          price: '150 zł',
+          price: '180 zł',
           featured: false,
           features: [
-            'Spotkanie wstępne ukierunkowane na Twoje potrzeby',
-            'Możliwość zadania pytań i omówienia oczekiwań',
-            'Rekomendacje co do dalszej ścieżki wsparcia',
+            '1 do 3 spotkań pomagających rozpoznać trudność',
+            'Omówienie aktualnej sytuacji i potrzeb',
+            'Ustalenie wstępnego planu wsparcia',
           ],
         },
         {
-          title: 'Sesja psychoterapii',
+          title: 'Psychoterapia indywidualna',
           duration: '50 minut',
-          price: '150 zł',
+          price: '180 zł',
           featured: true,
           features: [
-            'Regularna psychoterapia w bezpiecznej atmosferze',
-            'Praca nad celami terapeutycznymi z tygodnia na tydzień',
-            'Monitorowanie postępów i dostosowanie metod pracy',
+            'Regularna praca terapeutyczna w bezpiecznej atmosferze',
+            'Podejście CBT z elementami terapii schematu i DBT',
+            'Wsparcie także w formule online',
           ],
         },
         {
-          title: 'Pomoc psychologiczna',
+          title: 'Psychoterapia par',
           duration: '50 minut',
-          price: '150 zł',
+          price: '250 zł',
           featured: false,
           features: [
-            'Wsparcie w bieżących trudnościach i kryzysach',
-            'Psychoedukacja oraz praktyczne narzędzia radzenia sobie',
-            'Skupienie na poprawie samopoczucia i codziennego funkcjonowania',
-          ],
-        },
-        {
-          title: 'Konsultacja rodzinna',
-          duration: '50 minut',
-          price: '200 zł',
-          featured: false,
-          features: [
-            'Wspólna praca nad komunikacją i budowaniem porozumienia',
-            'Omówienie strategii wsparcia i roli każdego członka rodziny',
-            'Plan działań pomagający wprowadzić trwałe zmiany',
+            'Praca nad poprawą komunikacji i rozumienia siebie nawzajem',
+            'Wsparcie w sytuacjach napięcia i kryzysu w relacji',
+            'Wypracowanie bardziej pomocnych sposobów bycia razem',
           ],
         },
       ],
@@ -63,60 +59,56 @@ const Pricing = () => {
     en: {
       title: 'Pricing',
       subtitle:
-        'Clear rates and a fixed duration for every session—choose the support you need.',
+        'Current rates for consultations and psychotherapy.',
       cta: 'Book a session',
       note:
-        'Rates apply to online sessions. If you need another format or have scheduling questions, let’s talk and find the best option.',
+        'The first appointment is paid in advance to reserve the time slot. Appointments can be cancelled or rescheduled up to 24 hours before the session.',
+      details: [
+        'Because of the nature of my work, I may not always be able to answer the phone, so SMS is the preferred contact method.',
+        'I work exclusively with adults and I do not work with the family members or loved ones of my own clients.',
+        'The first few meetings are meant to get to know each other, define the main difficulties, and agree on a therapy plan.',
+        'Individual therapy usually takes place once a week, while couples therapy usually takes place every two weeks. In justified cases, frequency can be arranged individually.',
+        'Please arrive on time for sessions. Being late does not extend the appointment time.',
+      ],
       items: [
         {
-          title: 'Individual Consultation',
+          title: 'Psychological Consultation',
           duration: '50 minutes',
-          price: '150 PLN',
+          price: '180 PLN',
           featured: false,
           features: [
-            'Introductory meeting focused on your needs',
-            'Space for questions and clarifying expectations',
-            'Recommendations for the next steps in support',
+            '1 to 3 meetings focused on understanding the difficulty',
+            'Discussion of your current situation and needs',
+            'An initial support plan tailored to your case',
           ],
         },
         {
-          title: 'Psychotherapy Session',
+          title: 'Individual Psychotherapy',
           duration: '50 minutes',
-          price: '150 PLN',
+          price: '180 PLN',
           featured: true,
           features: [
-            'Ongoing psychotherapy in a safe, supportive setting',
-            'Work on therapeutic goals week by week',
-            'Progress tracking and tailored methods',
+            'Regular therapeutic work in a safe atmosphere',
+            'CBT approach with schema therapy and DBT elements',
+            'Available also in an online format',
           ],
         },
         {
-          title: 'Psychological Support',
+          title: 'Couples Psychotherapy',
           duration: '50 minutes',
-          price: '150 PLN',
+          price: '250 PLN',
           featured: false,
           features: [
-            'Support for current challenges and crises',
-            'Psychoeducation and practical coping tools',
-            'Focus on well-being and daily functioning',
-          ],
-        },
-        {
-          title: 'Family Consultation',
-          duration: '50 minutes',
-          price: '200 PLN',
-          featured: false,
-          features: [
-            'Joint work on communication and understanding',
-            'Discussing support strategies and family roles',
-            'Action plan to introduce lasting changes',
+            'Work on improving communication and mutual understanding',
+            'Support during relationship strain and crisis',
+            'Developing healthier ways of being together',
           ],
         },
       ],
     },
   };
 
-  const { title, subtitle, note, cta, items } = pricingContent[language];
+  const { title, subtitle, note, cta, items, details } = pricingContent[language];
 
   return (
     <section id="pricing" className="py-24 bg-background">
@@ -128,7 +120,7 @@ const Pricing = () => {
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {items.map(({ title, duration, price, featured, features }) => (
             <div
               key={title}
@@ -184,6 +176,19 @@ const Pricing = () => {
         <p className="text-center text-muted-foreground text-sm mt-12">
           {note}
         </p>
+        <div className="max-w-4xl mx-auto mt-8 bg-secondary/40 rounded-2xl p-8">
+          <h3 className="font-display text-2xl font-semibold text-foreground mb-6">
+            {language === 'pl' ? 'Informacje dotyczące współpracy' : 'Important Information'}
+          </h3>
+          <ul className="space-y-3 text-muted-foreground">
+            {details.map((detail) => (
+              <li key={detail} className="flex gap-3">
+                <Check className="w-5 h-5 flex-shrink-0 text-accent mt-0.5" />
+                <span>{detail}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );

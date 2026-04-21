@@ -21,7 +21,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="font-display text-xl font-semibold text-foreground">
-          Katarzyna Gostkowska
+          Katarzyna Gostkowska-Kraczkowska
           </a>
 
           {/* Desktop Navigation */}
