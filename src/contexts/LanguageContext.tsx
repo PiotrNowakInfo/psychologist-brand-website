@@ -71,12 +71,12 @@ const translations: Record<Language, Record<string, string>> = {
     // Testimonials
     'testimonials.title': 'Opinie klientów',
     'testimonials.subtitle': 'Co mówią osoby, którym pomogłem',
-    'testimonials.1.text': 'Profesjonalne podejście i pełne zrozumienie. Dzięki terapii odzyskałem kontrolę nad swoim życiem.',
-    'testimonials.1.author': 'Klient',
-    'testimonials.2.text': 'Ciepła atmosfera i skuteczne metody. Polecam każdemu, kto szuka wsparcia.',
-    'testimonials.2.author': 'Klientka',
-    'testimonials.3.text': 'Wreszcie znalazłem specjalistę, który naprawdę rozumie problemy uzależnień.',
-    'testimonials.3.author': 'Klient',
+    'testimonials.1.text': 'Z całego serca mogę polecić Panią Kasię jako psychoterapeutę, zaangażowanie, indywidualnie dobrana ścieżka terapii ... ',
+    'testimonials.1.author': 'Pacjent',
+    'testimonials.2.text': 'Polecam Panią Katarzynę. Dzięki niej zaczęłam zmieniać mój mały świat. Nabrałam siły wiary w siebie, przestałam się ... ',
+    'testimonials.2.author': 'Iza.W',
+    'testimonials.3.text': 'Chciałabym gorąco polecić panią Kasię każdemu kto czuje, że chciałby skorzystać z pomocy psychoterapeutycznej ale ... ',
+    'testimonials.3.author': 'Pacjent',
     
     // Contact
     'contact.title': 'Kontakt',
@@ -159,12 +159,12 @@ const translations: Record<Language, Record<string, string>> = {
     // Testimonials
     'testimonials.title': 'Client Testimonials',
     'testimonials.subtitle': 'What people I\'ve helped say',
-    'testimonials.1.text': 'Professional approach and full understanding. Thanks to therapy, I regained control over my life.',
-    'testimonials.1.author': 'Client',
-    'testimonials.2.text': 'Warm atmosphere and effective methods. I recommend to anyone looking for support.',
-    'testimonials.2.author': 'Client',
-    'testimonials.3.text': 'Finally found a specialist who truly understands addiction problems.',
-    'testimonials.3.author': 'Client',
+    'testimonials.1.text': 'I can recommend Ms. Kasia as a psychotherapist with all my heart; her commitment and individually tailored therapy path ...',
+    'testimonials.1.author': 'Patient',
+    'testimonials.2.text': 'I recommend Ms. Katarzyna. Thanks to her, I started to change my small world. I gained strength and self-belief, I stopped ...',
+    'testimonials.2.author': 'Iza.W',
+    'testimonials.3.text': 'I would like to warmly recommend Ms. Kasia to anyone who feels they would like to use psychotherapeutic help but ...',
+    'testimonials.3.author': 'Patient',
     
     // Contact
     'contact.title': 'Contact',
