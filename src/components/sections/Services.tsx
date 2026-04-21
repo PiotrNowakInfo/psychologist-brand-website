@@ -33,8 +33,8 @@ const Services = () => {
               key={titleKey}
               className="group p-8 bg-card rounded-xl card-shadow hover:card-shadow-hover transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                <Icon className="w-7 h-7 text-primary" />
+              <div className="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                <Icon className="w-7 h-7 text-accent" />
               </div>
               <h3 className="font-display text-xl font-semibold text-foreground mb-3">
                 {t(titleKey)}

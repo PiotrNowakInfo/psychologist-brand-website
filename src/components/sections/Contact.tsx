@@ -115,7 +115,7 @@ const Contact = () => {
               </h3>
               <div className="space-y-4">
                 <a
-                  href="tel:+48123456789"
+                  href="tel:+48508212085"
                   className="flex items-center gap-4 p-4 bg-card rounded-xl card-shadow hover:card-shadow-hover transition-shadow"
                 >
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
@@ -123,11 +123,11 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">{t('contact.info.phone')}</p>
-                    <p className="text-foreground font-medium">+48 123 456 789</p>
+                    <p className="text-foreground font-medium">+48 508-212-085</p>
                   </div>
                 </a>
                 <a
-                  href="mailto:kontakt@psychoterapia.pl"
+                  href="mailto:kasia.gostkowska@gmail.com"
                   className="flex items-center gap-4 p-4 bg-card rounded-xl card-shadow hover:card-shadow-hover transition-shadow"
                 >
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
@@ -135,7 +135,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">{t('contact.info.email')}</p>
-                    <p className="text-foreground font-medium">kontakt@psychoterapia.pl</p>
+                    <p className="text-foreground font-medium">kasia.gostkowska@gmail.com</p>
                   </div>
                 </a>
                 <div className="flex items-center gap-4 p-4 bg-card rounded-xl card-shadow">
@@ -144,7 +144,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">{t('contact.info.address')}</p>
-                    <p className="text-foreground font-medium">ul. Przykładowa 123, Warszawa</p>
+                    <p className="text-foreground font-medium">ul. Westerplatte 36-38, 82-200 Malbork</p>
                   </div>
                 </div>
               </div>
