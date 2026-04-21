@@ -2,19 +2,10 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import { PopupModal } from "react-calendly";
 
 const Header = () => {
   const { language, setLanguage, t } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
-
-  const calendlyUrls = {
-      pl: "https://calendly.com/surgerycode/katarzyna_gostkowska?month=2026-02",
-      en: "https://calendly.com/surgerycode/katarzyna_gostkowska?month=2026-02"
-  };
-
-  const currentCalendlyUrl = calendlyUrls[language] || calendlyUrls.pl;
 
   const navItems = [
     { key: 'nav.about', href: '#about' },
@@ -70,8 +61,8 @@ const Header = () => {
                 EN
               </button>
             </div>
-            <Button onClick={() => setIsCalendlyOpen(true)}>
-              {t('booking.title')}
+            <Button asChild>
+              <a href="#contact">{t('hero.cta')}</a>
             </Button>
           </div>
 
@@ -122,22 +113,17 @@ const Header = () => {
                   EN
                 </button>
               </div>
-              <Button className="flex-1" onClick={() => {
-                  setMobileMenuOpen(false);
-                  setIsCalendlyOpen(true);
-              }}>
-                {t('booking.title')}
+              <Button className="flex-1" asChild>
+                <a
+                  href="#contact"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {t('hero.cta')}
+                </a>
               </Button>
             </div>
           </div>
         )}
-
-        <PopupModal
-            url={currentCalendlyUrl}
-            onModalClose={() => setIsCalendlyOpen(false)}
-            open={isCalendlyOpen}
-            rootElement={document.getElementById("root")!}
-        />
       </div>
     </header>
   );

@@ -2,7 +2,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Phone, Mail, MapPin, ExternalLink } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 import { useState } from 'react';
 import { useToast } from '@/hooks/use-toast';
 
@@ -149,9 +149,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-
-{/* Online Booking - Removed as we have a dedicated section now */}
-
           </div>
         </div>
       </div>

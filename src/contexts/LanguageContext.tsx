@@ -91,15 +91,6 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.info.phone': 'Telefon',
     'contact.info.email': 'E-mail',
     'contact.info.address': 'Adres gabinetu',
-    'contact.booking.title': 'Rezerwacja online',
-    'contact.booking.desc': 'Umów wizytę przez platformę:',
-    'contact.booking.znanylekarz': 'ZnanyLekarz',
-    'contact.booking.doctorify': 'Doctorify',
-    
-    // Booking
-    'booking.title': 'Umów wizytę',
-    'booking.subtitle': 'Wybierz dogodny termin w kalendarzu poniżej.',
-
     // Footer
     'footer.rights': 'Wszelkie prawa zastrzeżone.',
     'footer.privacy': 'Polityka prywatności',
@@ -186,15 +177,6 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.info.phone': 'Phone',
     'contact.info.email': 'Email',
     'contact.info.address': 'Office Address',
-    'contact.booking.title': 'Online Booking',
-    'contact.booking.desc': 'Book an appointment via:',
-    'contact.booking.znanylekarz': 'ZnanyLekarz',
-    'contact.booking.doctorify': 'Doctorify',
-    
-    // Booking
-    'booking.title': 'Book an Appointment',
-    'booking.subtitle': 'Choose a convenient time in the calendar below.',
-
     // Footer
     'footer.rights': 'All rights reserved.',
     'footer.privacy': 'Privacy Policy',
