@@ -28,7 +28,7 @@ const About = () => {
           <div className="relative w-full">
             <div className="rounded-2xl overflow-hidden shadow-xl ring-1 ring-foreground/10 bg-muted/40">
               <img
-                src="/img3.png"
+                src="/Katarzyna_Gostkowska-Kraczkowska.jpg"
                 alt={t('about.title')}
                 className="w-full h-auto max-h-[640px] object-cover object-top"
               />
