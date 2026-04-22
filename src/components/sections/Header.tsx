@@ -20,8 +20,17 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="font-display text-xl font-semibold text-foreground">
-          Katarzyna Gostkowska-Kraczkowska
+          <a href="/" className="flex items-center gap-3 group">
+            <div className="w-10 h-10 md:w-12 md:h-12 flex-shrink-0">
+              <img 
+                src="/Logo_Katarzyna_Gostkowska-Kraczkowska.png" 
+                alt="Logo" 
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <span className="font-display text-lg md:text-xl font-semibold text-primary leading-tight">
+              Katarzyna<br className="md:hidden" /> Gostkowska-Kraczkowska
+            </span>
           </a>
 
           {/* Desktop Navigation */}
@@ -61,7 +70,7 @@ const Header = () => {
                 EN
               </button>
             </div>
-            <Button asChild>
+            <Button className="bg-primary text-white hover:bg-primary/90 rounded-full" asChild>
               <a href="#contact">{t('hero.cta')}</a>
             </Button>
           </div>
@@ -113,7 +122,7 @@ const Header = () => {
                   EN
                 </button>
               </div>
-              <Button className="flex-1" asChild>
+              <Button className="flex-1 bg-primary text-white hover:bg-primary/90 rounded-full" asChild>
                 <a
                   href="#contact"
                   onClick={() => setMobileMenuOpen(false)}

@@ -10,7 +10,9 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
-            <p className="font-display text-xl font-semibold mb-2">Katarzyna Gostkowska-Kraczkowska</p>
+            <p className="font-display text-2xl font-semibold mb-2 text-primary">
+              Katarzyna Gostkowska-Kraczkowska
+            </p>
             <p className="text-primary-foreground/70 text-sm">
               © {currentYear} {t('footer.rights')}
             </p>

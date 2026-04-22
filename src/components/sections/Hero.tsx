@@ -51,8 +51,7 @@ const Hero = () => {
           >
             <Button
               size="lg"
-              variant="outline"
-              className="bg-white border-primary-foreground/30 text-primary hover:bg-primary-foreground/10 font-medium px-8"
+              className="bg-primary text-white hover:bg-primary/90 font-medium px-10 rounded-full shadow-lg shadow-primary/20 transition-all hover:-translate-y-1"
               asChild
             >
               <a href="#contact">{t("hero.cta")}</a>
