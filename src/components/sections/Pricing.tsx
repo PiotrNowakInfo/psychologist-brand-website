@@ -143,7 +143,7 @@ const Pricing = () => {
                 {duration}
               </p>
               
-              <p className={`text-4xl font-display font-bold mb-8 ${featured ? 'text-primary-foreground' : 'text-foreground'}`}>
+              <p className={`text-4xl font-display font-bold mb-8 ${featured ? 'text-white' : 'text-primary'}`}>
                 {price}
               </p>
 
@@ -176,15 +176,15 @@ const Pricing = () => {
         <p className="text-center text-muted-foreground text-sm mt-12">
           {note}
         </p>
-        <div className="max-w-4xl mx-auto mt-8 bg-secondary/40 rounded-2xl p-8">
-          <h3 className="font-display text-2xl font-semibold text-foreground mb-6">
+        <div className="max-w-4xl mx-auto mt-8 bg-primary/5 border border-primary/10 rounded-2xl p-8">
+          <h3 className="font-display text-2xl font-semibold text-primary mb-6">
             {language === 'pl' ? 'Informacje dotyczące współpracy' : 'Important Information'}
           </h3>
-          <ul className="space-y-3 text-muted-foreground">
+          <ul className="space-y-4 text-muted-foreground">
             {details.map((detail) => (
               <li key={detail} className="flex gap-3">
-                <Check className="w-5 h-5 flex-shrink-0 text-accent mt-0.5" />
-                <span>{detail}</span>
+                <Check className="w-5 h-5 flex-shrink-0 text-primary mt-0.5" />
+                <span className="leading-relaxed">{detail}</span>
               </li>
             ))}
           </ul>

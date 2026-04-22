@@ -8,59 +8,59 @@
 
 @layer base {
   :root {
-    /* Deep navy and warm neutrals - Professional & Calming */
-    --background: 220 20% 97%;
-    --foreground: 222 47% 11%;
+    /* Deep navy and elegant gold - Professional & Calming */
+    --background: 36 33% 98%;
+    --foreground: 217 64% 13%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 217 64% 13%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 217 64% 13%;
 
-    /* Deep navy primary */
-    --primary: 222 47% 20%;
-    --primary-foreground: 210 40% 98%;
+    /* Deep navy primary from 'KATARZYNA' */
+    --primary: 217 64% 13%;
+    --primary-foreground: 36 33% 98%;
 
-    /* Warm beige secondary */
-    --secondary: 35 30% 94%;
-    --secondary-foreground: 222 47% 11%;
+    /* Elegant gold secondary from 'GOSTKOWSKA-KARCZESKA' */
+    --secondary: 41 37% 53%;
+    --secondary-foreground: 217 64% 13%;
 
-    /* Soft sage accent */
-    --accent: 20 64% 64%;
+    /* Accent color matches the gold highlights */
+    --accent: 41 37% 53%;
     --accent-foreground: 0 0% 100%;
 
-    --muted: 220 15% 94%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 36 20% 92%;
+    --muted-foreground: 217 20% 45%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 88%;
-    --input: 220 15% 88%;
-    --ring: 222 47% 20%;
+    --border: 36 20% 88%;
+    --input: 36 20% 88%;
+    --ring: 217 64% 13%;
 
     --radius: 0.75rem;
 
-    /* Custom tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(222 47% 15%) 0%, hsl(222 35% 25%) 50%, hsl(200 30% 30%) 100%);
-    --card-shadow: 0 4px 20px -4px hsl(222 47% 11% / 0.08);
-    --card-shadow-hover: 0 8px 30px -4px hsl(222 47% 11% / 0.12);
-    --text-gradient: linear-gradient(135deg, hsl(222 47% 20%) 0%, hsl(200 30% 35%) 100%);
+    /* Custom tokens based on refined palette */
+    --hero-gradient: linear-gradient(135deg, hsl(217 64% 10%) 0%, hsl(217 50% 18%) 50%, hsl(41 30% 25%) 100%);
+    --card-shadow: 0 4px 20px -4px hsl(217 64% 13% / 0.08);
+    --card-shadow-hover: 0 8px 30px -4px hsl(217 64% 13% / 0.12);
+    --text-gradient: linear-gradient(135deg, hsl(217 64% 13%) 0%, hsl(41 37% 45%) 100%);
 
     /* Typography */
     --font-display: 'Cormorant Garamond', Georgia, serif;
     --font-body: 'Inter', system-ui, sans-serif;
 
     /* Sidebar defaults */
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-background: 36 33% 98%;
+    --sidebar-foreground: 217 64% 20%;
+    --sidebar-primary: 217 64% 13%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 41 37% 95%;
+    --sidebar-accent-foreground: 217 64% 13%;
+    --sidebar-border: 36 20% 88%;
+    --sidebar-ring: 217 64% 13%;
   }
 
   .dark {
@@ -152,6 +152,21 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  .text-gold-gradient {
+    background: linear-gradient(
+      to bottom right,
+      hsl(41 37% 70%) 0%,
+      hsl(41 37% 53%) 25%,
+      hsl(41 37% 85%) 50%,
+      hsl(41 37% 53%) 75%,
+      hsl(41 37% 40%) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
   }
 
   .card-shadow {

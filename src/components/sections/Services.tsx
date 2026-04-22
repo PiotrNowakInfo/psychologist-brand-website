@@ -14,27 +14,27 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-24 bg-secondary/50">
+    <section id="services" className="py-24 bg-primary/5">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="font-display text-3xl md:text-5xl font-semibold text-foreground mb-4">
+          <h2 className="font-display text-3xl md:text-5xl font-semibold text-primary mb-4">
             {t('services.title')}
           </h2>
           <p className="text-muted-foreground text-lg">
             {t('services.subtitle')}
           </p>
         </div>
-
+ 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map(({ titleKey, descKey, icon: Icon }) => (
             <div
               key={titleKey}
-              className="group p-8 bg-card rounded-xl card-shadow hover:card-shadow-hover transition-all duration-300 hover:-translate-y-1"
+              className="group p-8 bg-card border border-primary/5 rounded-2xl card-shadow hover:card-shadow-hover transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="w-14 h-14 bg-accent/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
-                <Icon className="w-7 h-7 text-accent" />
+              <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                <Icon className="w-7 h-7 text-primary" />
               </div>
               <h3 className="font-display text-xl font-semibold text-foreground mb-3">
                 {t(titleKey)}

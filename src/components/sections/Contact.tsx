@@ -102,7 +102,7 @@ const Contact = () => {
                   className="bg-card resize-none"
                 />
               </div>
-              <Button type="submit" size="lg" className="w-full">
+              <Button type="submit" size="lg" className="w-full bg-primary text-white hover:bg-primary/90 rounded-full shadow-lg shadow-primary/20">
                 {t('contact.form.submit')}
               </Button>
             </form>
