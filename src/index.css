@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Elegant Professional Design System for Psychology Practice */
+
+@layer base {
+  :root {
+    /* Deep navy and elegant gold - Professional & Calming */
+    --background: 36 33% 98%;
+    --foreground: 217 64% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 217 64% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 217 64% 13%;
+
+    /* Deep navy primary from 'KATARZYNA' */
+    --primary: 217 64% 13%;
+    --primary-foreground: 36 33% 98%;
+
+    /* Elegant gold secondary from 'GOSTKOWSKA-KARCZESKA' */
+    --secondary: 41 37% 53%;
+    --secondary-foreground: 217 64% 13%;
+
+    /* Accent color matches the gold highlights */
+    --accent: 41 37% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 36 20% 92%;
+    --muted-foreground: 217 20% 45%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 36 20% 88%;
+    --input: 36 20% 88%;
+    --ring: 217 64% 13%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens based on refined palette */
+    --hero-gradient: linear-gradient(135deg, hsl(217 64% 10%) 0%, hsl(217 50% 18%) 50%, hsl(41 30% 25%) 100%);
+    --card-shadow: 0 4px 20px -4px hsl(217 64% 13% / 0.08);
+    --card-shadow-hover: 0 8px 30px -4px hsl(217 64% 13% / 0.12);
+    --text-gradient: linear-gradient(135deg, hsl(217 64% 13%) 0%, hsl(41 37% 45%) 100%);
+
+    /* Typography */
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+
+    /* Sidebar defaults */
+    --sidebar-background: 36 33% 98%;
+    --sidebar-foreground: 217 64% 20%;
+    --sidebar-primary: 217 64% 13%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 41 37% 95%;
+    --sidebar-accent-foreground: 217 64% 13%;
+    --sidebar-border: 36 20% 88%;
+    --sidebar-ring: 217 64% 13%;
+  }
+
+  .dark {
+    --background: 222 47% 8%;
+    --foreground: 210 40% 96%;
+
+    --card: 222 40% 12%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 222 40% 12%;
+    --popover-foreground: 210 40% 96%;
+
+    --primary: 210 40% 85%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 222 30% 18%;
+    --secondary-foreground: 210 40% 96%;
+
+    --accent: 160 30% 50%;
+    --accent-foreground: 222 47% 8%;
+
+    --muted: 222 30% 18%;
+    --muted-foreground: 220 15% 60%;
+
+    --destructive: 0 62.8% 40%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 222 30% 20%;
+    --input: 222 30% 20%;
+    --ring: 210 40% 85%;
+
+    --hero-gradient: linear-gradient(135deg, hsl(222 47% 6%) 0%, hsl(222 35% 12%) 50%, hsl(200 30% 15%) 100%);
+    --card-shadow: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
+    --card-shadow-hover: 0 8px 30px -4px hsl(0 0% 0% / 0.4);
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .hero-gradient {
+    background: var(--hero-gradient);
+  }
+
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-xl border border-white/20 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)];
+  }
+
+  .text-glow {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  }
+
+  .text-gradient {
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gold-gradient {
+    background: linear-gradient(
+      to bottom right,
+      hsl(41 37% 70%) 0%,
+      hsl(41 37% 53%) 25%,
+      hsl(41 37% 85%) 50%,
+      hsl(41 37% 53%) 75%,
+      hsl(41 37% 40%) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+  }
+
+  .card-shadow {
+    box-shadow: var(--card-shadow);
+  }
+
+  .card-shadow-hover {
+    box-shadow: var(--card-shadow-hover);
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.6s ease-out forwards;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
