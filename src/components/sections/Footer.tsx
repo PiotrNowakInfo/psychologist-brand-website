@@ -1,4 +1,6 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import { Link } from 'react-router-dom';
+import { openCookieSettings } from '@/lib/cookie-consent';
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -19,13 +21,20 @@ const Footer = () => {
           </div>
 
           {/* Links */}
-          <div className="flex items-center gap-6">
-            <a
-              href="#"
-              className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+          <div className="flex flex-wrap items-center justify-center gap-6 md:justify-end">
+            <Link
+              to="/polityka-prywatnosci"
+              className="text-sm text-primary-foreground/70 transition-colors hover:text-primary-foreground"
             >
               {t('footer.privacy')}
-            </a>
+            </Link>
+            <button
+              type="button"
+              onClick={openCookieSettings}
+              className="text-sm text-primary-foreground/70 transition-colors hover:text-primary-foreground"
+            >
+              {t('footer.cookies')}
+            </button>
           </div>
         </div>
       </div>

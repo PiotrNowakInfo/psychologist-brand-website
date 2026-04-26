@@ -1,11 +1,14 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
+import { ArrowLeft, Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Header = () => {
   const { language, setLanguage, t } = useLanguage();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   const navItems = [
     { key: 'nav.about', href: '#about' },
@@ -34,17 +37,27 @@ const Header = () => {
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => (
-              <a
-                key={item.key}
-                href={item.href}
-                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {t(item.key)}
-              </a>
-            ))}
-          </nav>
+          {isHomePage ? (
+            <nav className="hidden md:flex items-center gap-8">
+              {navItems.map((item) => (
+                <a
+                  key={item.key}
+                  href={item.href}
+                  className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {t(item.key)}
+                </a>
+              ))}
+            </nav>
+          ) : (
+            <a
+              href="/"
+              className="hidden md:inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              {t('nav.backHome')}
+            </a>
+          )}
 
           {/* Language Switcher & CTA */}
           <div className="hidden md:flex items-center gap-4">
@@ -70,9 +83,15 @@ const Header = () => {
                 EN
               </button>
             </div>
-            <Button className="bg-primary text-white hover:bg-primary/90 rounded-full" asChild>
-              <a href="#contact">{t('hero.cta')}</a>
-            </Button>
+            {isHomePage ? (
+              <Button className="bg-primary text-white hover:bg-primary/90 rounded-full" asChild>
+                <a href="#contact">{t('hero.cta')}</a>
+              </Button>
+            ) : (
+              <Button className="bg-primary text-white hover:bg-primary/90 rounded-full" asChild>
+                <a href="/">{t('nav.backHome')}</a>
+              </Button>
+            )}
           </div>
 
           {/* Mobile Menu Button */}
@@ -87,18 +106,29 @@ const Header = () => {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-border pt-4">
-            <nav className="flex flex-col gap-4">
-              {navItems.map((item) => (
-                <a
-                  key={item.key}
-                  href={item.href}
-                  className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {t(item.key)}
-                </a>
-              ))}
-            </nav>
+            {isHomePage ? (
+              <nav className="flex flex-col gap-4">
+                {navItems.map((item) => (
+                  <a
+                    key={item.key}
+                    href={item.href}
+                    className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {t(item.key)}
+                  </a>
+                ))}
+              </nav>
+            ) : (
+              <a
+                href="/"
+                className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <ArrowLeft className="h-4 w-4" />
+                {t('nav.backHome')}
+              </a>
+            )}
             <div className="flex items-center gap-4 mt-4 pt-4 border-t border-border">
               <div className="flex items-center border border-border rounded-lg overflow-hidden">
                 <button
@@ -122,14 +152,25 @@ const Header = () => {
                   EN
                 </button>
               </div>
-              <Button className="flex-1 bg-primary text-white hover:bg-primary/90 rounded-full" asChild>
-                <a
-                  href="#contact"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {t('hero.cta')}
-                </a>
-              </Button>
+              {isHomePage ? (
+                <Button className="flex-1 bg-primary text-white hover:bg-primary/90 rounded-full" asChild>
+                  <a
+                    href="#contact"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {t('hero.cta')}
+                  </a>
+                </Button>
+              ) : (
+                <Button className="flex-1 bg-primary text-white hover:bg-primary/90 rounded-full" asChild>
+                  <a
+                    href="/"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {t('nav.backHome')}
+                  </a>
+                </Button>
+              )}
             </div>
           </div>
         )}

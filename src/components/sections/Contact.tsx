@@ -2,10 +2,12 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import { Checkbox } from '@/components/ui/checkbox';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { useState } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import LocationMap from './LocationMap';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   const { t } = useLanguage();
@@ -16,15 +18,26 @@ const Contact = () => {
     phone: '',
     message: '',
   });
+  const [privacyAccepted, setPrivacyAccepted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!privacyAccepted) {
+      toast({
+        title: t('contact.form.privacyError'),
+        variant: 'destructive',
+      });
+      return;
+    }
+
     // For now, just show success message (backend can be added later)
     toast({
       title: t('contact.form.success'),
       description: 'Odpowiem najszybciej jak to możliwe.',
     });
     setFormData({ name: '', email: '', phone: '', message: '' });
+    setPrivacyAccepted(false);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -101,6 +114,29 @@ const Contact = () => {
                   rows={5}
                   className="bg-card resize-none"
                 />
+              </div>
+              <div className="rounded-2xl border border-border bg-card/80 p-4">
+                <p className="text-sm leading-6 text-muted-foreground">
+                  {t('contact.form.privacyNotice')}
+                </p>
+                <div className="mt-4 flex items-start gap-3">
+                  <Checkbox
+                    id="privacy-consent"
+                    checked={privacyAccepted}
+                    onCheckedChange={(checked) => setPrivacyAccepted(checked === true)}
+                    className="mt-1"
+                  />
+                  <label htmlFor="privacy-consent" className="text-sm leading-6 text-foreground">
+                    {t('contact.form.privacyConsent')}{' '}
+                    <Link
+                      to="/polityka-prywatnosci"
+                      className="font-medium text-primary underline-offset-4 hover:underline"
+                    >
+                      {t('footer.privacy')}
+                    </Link>
+                    .
+                  </label>
+                </div>
               </div>
               <Button type="submit" size="lg" className="w-full bg-primary text-white hover:bg-primary/90 rounded-full shadow-lg shadow-primary/20">
                 {t('contact.form.submit')}

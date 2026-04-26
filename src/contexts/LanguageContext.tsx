@@ -16,6 +16,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.pricing': 'Cennik',
     'nav.testimonials': 'Opinie',
     'nav.contact': 'Kontakt',
+    'nav.backHome': 'Strona główna',
     
     // Hero
     'hero.title': 'Katarzyna Gostkowska-Kraczkowska',
@@ -87,6 +88,9 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.form.message': 'Wiadomość',
     'contact.form.submit': 'Wyślij wiadomość',
     'contact.form.success': 'Wiadomość została wysłana!',
+    'contact.form.privacyNotice': 'W formularzu podaj tylko dane potrzebne do kontaktu i umówienia wizyty. Dla ochrony prywatności nie wpisuj szczegółowych informacji o stanie zdrowia w pierwszej wiadomości.',
+    'contact.form.privacyConsent': 'Potwierdzam, że zapoznałem/am się z polityką prywatności i zasadami przetwarzania danych.',
+    'contact.form.privacyError': 'Aby wysłać formularz, potwierdź zapoznanie się z polityką prywatności.',
     'contact.info.title': 'Dane kontaktowe',
     'contact.info.phone': 'Telefon',
     'contact.info.email': 'E-mail',
@@ -96,6 +100,27 @@ const translations: Record<Language, Record<string, string>> = {
     // Footer
     'footer.rights': 'Wszelkie prawa zastrzeżone.',
     'footer.privacy': 'Polityka prywatności',
+    'footer.cookies': 'Ustawienia cookies',
+
+    // Cookies
+    'cookies.badge': 'Prywatność',
+    'cookies.title': 'Szanuję Twoją prywatność',
+    'cookies.description': 'Ta strona używa niezbędnych plików cookies do prawidłowego działania oraz może zapisywać opcjonalne ustawienia funkcjonalne i statystyczne tylko po Twojej zgodzie. Formularz kontaktowy służy do pierwszego kontaktu i umawiania wizyt.',
+    'cookies.readMore': 'i sprawdź, jak przetwarzane są dane przekazywane w formularzu.',
+    'cookies.acceptAll': 'Akceptuj wszystkie',
+    'cookies.reject': 'Tylko niezbędne',
+    'cookies.settings': 'Dostosuj',
+    'cookies.save': 'Zapisz wybór',
+    'cookies.alwaysActive': 'zawsze aktywne',
+    'cookies.dialog.title': 'Ustawienia prywatności',
+    'cookies.dialog.description': 'Możesz zdecydować, które opcjonalne pliki cookies mają być aktywne. Niezbędne cookies odpowiadają za bezpieczeństwo strony i zapamiętanie Twojej decyzji.',
+    'cookies.dialog.more': 'Więcej informacji znajdziesz w',
+    'cookies.category.necessary.title': 'Niezbędne',
+    'cookies.category.necessary.description': 'Są wymagane do prawidłowego działania strony, zapisania decyzji o cookies i utrzymania podstawowych funkcji serwisu.',
+    'cookies.category.functionality.title': 'Funkcjonalne',
+    'cookies.category.functionality.description': 'Pozwalają zapamiętać dodatkowe ustawienia użytkownika, np. preferencje strony, jeśli zostaną uruchomione.',
+    'cookies.category.analytics.title': 'Analityczne',
+    'cookies.category.analytics.description': 'Pomagają mierzyć sposób korzystania ze strony i rozwijać serwis. Pozostają wyłączone, dopóki nie wyrazisz zgody.',
   },
   en: {
     // Navigation
@@ -104,6 +129,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.pricing': 'Pricing',
     'nav.testimonials': 'Testimonials',
     'nav.contact': 'Contact',
+    'nav.backHome': 'Home',
     
     // Hero
     'hero.title': 'Katarzyna Gostkowska-Kraczkowska',
@@ -175,6 +201,9 @@ const translations: Record<Language, Record<string, string>> = {
     'contact.form.message': 'Message',
     'contact.form.submit': 'Send Message',
     'contact.form.success': 'Message sent successfully!',
+    'contact.form.privacyNotice': 'Please provide only the data needed for contact and appointment booking. To protect your privacy, do not include detailed health information in the first message.',
+    'contact.form.privacyConsent': 'I confirm that I have read the privacy policy and the data processing rules.',
+    'contact.form.privacyError': 'Please confirm that you have read the privacy policy before sending the form.',
     'contact.info.title': 'Contact Information',
     'contact.info.phone': 'Phone',
     'contact.info.email': 'Email',
@@ -184,6 +213,27 @@ const translations: Record<Language, Record<string, string>> = {
     // Footer
     'footer.rights': 'All rights reserved.',
     'footer.privacy': 'Privacy Policy',
+    'footer.cookies': 'Cookie Settings',
+
+    // Cookies
+    'cookies.badge': 'Privacy',
+    'cookies.title': 'Your privacy matters here',
+    'cookies.description': 'This website uses necessary cookies for proper operation and may store optional functionality or analytics settings only with your consent. The contact form is intended for first contact and appointment booking.',
+    'cookies.readMore': 'to learn how data submitted through the form is processed.',
+    'cookies.acceptAll': 'Accept all',
+    'cookies.reject': 'Necessary only',
+    'cookies.settings': 'Customize',
+    'cookies.save': 'Save choices',
+    'cookies.alwaysActive': 'always active',
+    'cookies.dialog.title': 'Privacy settings',
+    'cookies.dialog.description': 'You can decide which optional cookies may be active. Necessary cookies handle website security and remember your privacy choice.',
+    'cookies.dialog.more': 'You can find more details in the',
+    'cookies.category.necessary.title': 'Necessary',
+    'cookies.category.necessary.description': 'They are required for the website to work properly, remember your cookie decision, and maintain basic service features.',
+    'cookies.category.functionality.title': 'Functionality',
+    'cookies.category.functionality.description': 'They allow the website to remember extra user preferences if such features are enabled in the future.',
+    'cookies.category.analytics.title': 'Analytics',
+    'cookies.category.analytics.description': 'They help measure how the website is used and improve the service. They stay disabled until you consent.',
   },
 };
 
