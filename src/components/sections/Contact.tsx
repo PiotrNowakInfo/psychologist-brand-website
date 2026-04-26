@@ -128,7 +128,7 @@ const Contact = () => {
                   </div>
                 </a>
                 <a
-                  href="mailto:kasia.gostkowska@gmail.com"
+                  href="mailto:k.gostkowskakraczkowska@gmail.com"
                   className="flex items-center gap-4 p-4 bg-card rounded-xl card-shadow hover:card-shadow-hover transition-shadow"
                 >
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
@@ -136,7 +136,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">{t('contact.info.email')}</p>
-                    <p className="text-foreground font-medium">kasia.gostkowska@gmail.com</p>
+                    <p className="text-foreground font-medium">k.gostkowskakraczkowska@gmail.com</p>
                   </div>
                 </a>
                 <div className="flex items-center gap-4 p-4 bg-card rounded-xl card-shadow">
